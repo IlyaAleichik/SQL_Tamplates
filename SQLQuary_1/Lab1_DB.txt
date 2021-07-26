@@ -1,0 +1,20 @@
+Таблица Оценки 
+Столбец (ID_S, Date, Score1, Score2, Score3, Average)
+
+create database AverageScores
+create table Scores (ID_S tinyint not null,
+                    Date date not null,
+                    Score1 int not null,
+                    Score2 int not null, 
+                    Score3 int not null, 
+                    Average  иnot null,
+                    constraint CS_PK primary key(ID_S),
+                    constraint CS_Check Check() )
+
+
+1. Определить ссылочную целостность первичного и внешнего ключа
+2. У каждого в базе данных должно быть создано по 2 ограничения след вида Default Check(between, like, in) Unique
+3. Сделать любое вычесляемое поле
+4. Alter Table
+
+
